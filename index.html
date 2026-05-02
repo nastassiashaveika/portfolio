@@ -2,15 +2,14 @@
   <!DOCTYPE html>
   <html lang="en">
     <head>
-      <script>
-        if (window.innerWidth < 768 && !sessionStorage.getItem('forceDesktop')) {
-        window.location.replace('/mobile.html');
-        }
-      </script>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script>
+        if (/iPhone|iPad|iPod|Android|Mobile/i.test(navigator.userAgent) && !sessionStorage.getItem('forceDesktop')) {
+          window.location.replace('/mobile.html');
+        }
+      </script>
       <title>Nastassia Shaveika</title>
-      <title>favicon.png</title>
       <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
       <script type="module" crossorigin src="/assets/index-5-Zj55RP.js"></script>
       <link rel="stylesheet" crossorigin href="/assets/index-B4URNVrq.css">
