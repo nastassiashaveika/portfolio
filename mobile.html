@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nastassia Shaveika</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --ink: #1a1a1a;
+    --muted: #8a8a8a;
+    --line: #e5e5e5;
+    --accent: #7a9c88;
+    --bg: #fdfcf9;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Instrument Sans', -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.55;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+    padding: 28px 24px 80px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  h1, h2, h3 {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  h1 {
+    font-size: 38px;
+    line-height: 1.1;
+    margin-bottom: 28px;
+  }
+
+  h1 em {
+    color: var(--accent);
+    font-style: italic;
+  }
+
+  .nav {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 36px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--line);
+    font-size: 14px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav a {
+    color: var(--muted);
+    text-decoration: none;
+    white-space: nowrap;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .nav a:hover, .nav a.active {
+    color: var(--ink);
+    border-bottom-color: var(--accent);
+  }
+
+  section {
+    margin-bottom: 56px;
+  }
+
+  .section-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    margin-bottom: 20px;
+  }
+
+  .bio p {
+    margin-bottom: 16px;
+    color: #2a2a2a;
+  }
+
+  a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+
+  a:hover {
+    color: var(--accent);
+  }
+
+  .project {
+    padding: 22px 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .project:last-child {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .project-date {
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+    margin-bottom: 6px;
+  }
+
+  .project-title {
+    font-size: 22px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  .project-title a {
+    text-decoration: none;
+    color: var(--ink);
+  }
+
+  .project-title a:hover {
+    color: var(--accent);
+  }
+
+  .project-desc {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.5;
+  }
+
+  .footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  .desktop-link {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="#bio" class="active">bio</a>
+  <a href="#work">work</a>
+</nav>
+
+<section id="bio">
+  <h1>I'm Nastassia, <em>making sense of culture and AI.</em></h1>
+  <div class="bio">
+    <p>I'm a senior at <a href="https://www.minerva.edu/" target="_blank" rel="noopener">Minerva University</a>, studying Data Science and Statistics with an Economics minor. Based in San Francisco now, I've lived in Seoul, Berlin, Taipei, and DC.</p>
+    <p>Currently, I work in enrollment operations — hosting events, A/B testing email campaigns, and talking to high schoolers from all over the world.</p>
+    <p>My research on AI's orientalist bias in emotion recognition is a <a href="https://nastassiashaveika.github.io/AI-in-Art-Emotion-v1/" target="_blank" rel="noopener">data journalism story</a>. I also study socio-economic development through the lens of colonial legacy, with a particular interest in Eastern Europe.</p>
+    <p>Previously, I competed in the International Economics Olympiad and interned at the Cato Institute.</p>
+    <p>Best way to reach me is by email at <a href="mailto:nastassiashaveika@gmail.com">nastassiashaveika@gmail.com</a>, or find me on <a href="https://www.linkedin.com/in/nastassia-shaveika/" target="_blank" rel="noopener">LinkedIn</a>. <a href="https://drive.google.com/file/d/1-w-nXPhVbafC6EU1gweZFK4cvorYWiVq/view?usp=sharing" target="_blank" rel="noopener">Resume here.</a></p>
+  </div>
+</section>
+
+<section id="work">
+  <div class="section-label">Research Projects</div>
+
+  <div class="project">
+    <div class="project-date">04 / 26</div>
+    <h3 class="project-title"><a href="https://nastassiashaveika.github.io/AI-in-Art-Emotion-v1/" target="_blank" rel="noopener">AI Sees Calm in Chaos</a></h3>
+    <p class="project-desc">AI says the funeral painting above is calm. I researched why.</p>
+  </div>
+
+  <div class="project">
+    <div class="project-date">04 / 25</div>
+    <h3 class="project-title">Forest Fires in Belarus</h3>
+    <p class="project-desc">I modeled forest fire spread in Belarus using Monte Carlo percolation.</p>
+  </div>
+
+  <div class="project">
+    <div class="project-date">03 / 25</div>
+    <h3 class="project-title">Ex-Grand Duchy of Lithuania</h3>
+    <p class="project-desc">Economic analysis of Belarus's slow growth compared to Lithuania and Poland since 1991.</p>
+  </div>
+
+  <div class="project">
+    <div class="project-date">12 / 24</div>
+    <h3 class="project-title">My Dog Turned Into Data</h3>
+    <p class="project-desc">I have a Westie who does a lot of things during the day, and gets mistaken for a Maltese. Can LLMs tell the difference?</p>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">Takes and Culture</div>
+
+  <div class="project">
+    <div class="project-date">12 / 25</div>
+    <h3 class="project-title">Sherpa Needs to Be in Taipei</h3>
+    <p class="project-desc">On Tsherin Sherpa's Buddhist pop art and why it belongs in a major Taiwanese institution.</p>
+  </div>
+
+  <div class="project">
+    <div class="project-date">11 / 25</div>
+    <h3 class="project-title">Watch This Cartoon During Lunch</h3>
+    <p class="project-desc">15 mins of cartoon + 5 mins of writing. We read Foe and Fanon in class, and my mom told me about this cartoon.</p>
+  </div>
+
+  <div class="project">
+    <div class="project-date">11 / 23</div>
+    <h3 class="project-title">Kim's Woman, and Dynamic Identity</h3>
+    <p class="project-desc">On Kulim Kim's 1989 painting of a white woman emerging from water in Korea, and what it says about Eastern identity.</p>
+  </div>
+</section>
+
+<div class="footer">
+  Nastassia Shaveika · 2026
+  <br>
+  <a href="?desktop=1" class="desktop-link">View desktop site →</a>
+</div>
+
+<script>
+  // Allow override to view desktop on phone if needed
+  if (new URLSearchParams(window.location.search).get('desktop') === '1') {
+    sessionStorage.setItem('forceDesktop', '1');
+    window.location.href = '/index.html';
+  }
+</script>
+
+</body>
+</html>
